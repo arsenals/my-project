@@ -1,8 +1,8 @@
-    Django == 3.1
-    psycopg2-binary==2.8.6
-    wheel
-    Pillow ==7.1
-    gunicorn
-    python=decouple
-    dj-database-url
-    whitenoise
+Django == 3.1
+psycopg2-binary==2.8.6
+wheel
+Pillow ==7.1
+gunicorn
+python-decouple
+dj-database-url
+whitenoise

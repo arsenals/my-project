@@ -21,10 +21,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y!2gu4@st0fm^vm6uy!hs2o1djp3c@2@d2^0@y4)ygq-oq+@#$'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('Debug',default=False,cast=boot)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'test_project.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default':dj_database_url.config(
+    'default': dj_database_url.config(
         default=config('DATABASE_URL')
     )
 }
