@@ -5,15 +5,15 @@
     <table class="table table-borderlist">
         <thead>
             <tr>
-                <td>Заголовок поста</td>
-                <td>Изображение</td>
-                <td> Действие</td>
+                <td style="color:#FFFFFF">Заголовок поста</td>
+                <td style="color:#FFFFFF">Изображение</td>
+                <td style="color:#FFFFFF"> Действие</td>
             </tr>
         </thead>
         <tbody>
             {% for post in posts %}
             <tr>
-                <td><a href = "{% url 'post-details' pk=post.pk %}">{{post.title}}</a></td>
+                <td style="color:#FFFFFF"><a href = "{% url 'post-details' pk=post.pk %}">{{post.title}}</a></td>
                 <td>{% if post.image %}<img width="100" height="100" src="{{ post.image.url }}">{%endif%}</td>
                 <td><a class="btn btn-primary btn-sm" role="button" href="{%url 'edit-post' post.pk%}">Изменить пост</a><a class="btn btn-secondary btn-sm" role="button" href="{%url 'delete-post' post.pk%}">Удалить пост</a></td>
             </tr>
