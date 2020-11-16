@@ -2,7 +2,7 @@ body{
     background-image: url('../img/fk-arsenal.jpg')
 }
 .logo{
-    color: red;
+    color:  white;
     front-family: 'Lobster';
 }
 .logo a:hover,
