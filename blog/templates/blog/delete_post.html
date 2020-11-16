@@ -1,0 +1,10 @@
+{% extends 'includes/base.html' %}
+{% block title %}Удаление поста{% endblock title %}
+{% block body %}
+  <h1> Вы действительно хотите удалить пост?</h1>
+  <form method="post">
+    {% csrf_token %}
+    <button type="sumbit" value="Yes"> Удалить</button>
+    <a href ="/"> Отмена </a>
+  </form>
+{% endblock body %}

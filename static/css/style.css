@@ -1,0 +1,11 @@
+body{
+    background-image: url('../img/fk-arsenal.jpg')
+}
+.logo{
+    color: red;
+    front-family: 'Lobster';
+}
+.logo a:hover,
+.logo a:active{
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+{% extends 'includes/base.html' %}
+{% block title %} Создание нового поста {% endblock title %}
+{% block body %}
+<h1> Создать новый пост </h1>
+  <form method= "post" enctype= "multipart/form-data">
+      {% csrf_token %}
+      {{ post_form.as_p }}
+      <button type ="sumbit" value= "Sumbit">Create post</button>
+  </form>
+{% endblock body %}
+
