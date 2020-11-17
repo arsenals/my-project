@@ -2,10 +2,10 @@ body{
     background-image: url('../img/dd1.jpg')
 }
 .logo{
-    color:  #FFFFF;
+    color:  #FFFFFF;
     front-family: 'Lobster';
 }
 .logo a:hover,
 .logo a:active{
-    text-decoration: none;
+    text-decoration: #FFFFFF;
 }
