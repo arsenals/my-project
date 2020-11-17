@@ -1,7 +1,10 @@
-
 {% extends 'includes/base.html' %}
+{% load static %}
 {% block title %}{{ post.title }}{% endblock title %}
 {% block body %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
     <p>{{ post.title }}</p>
     <p>{{ post.text }}</p>
     <p>{{ post.user }}</p>
