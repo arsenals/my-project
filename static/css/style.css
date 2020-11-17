@@ -2,7 +2,7 @@ body{
     background-image: url('../img/dd1.jpg')
 }
 .logo{
-    color:  white;
+    color:  #FFFFF;
     front-family: 'Lobster';
 }
 .logo a:hover,
